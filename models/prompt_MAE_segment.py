@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from knn_cuda import KNN
 from extensions.chamfer_dist import ChamferDistanceL1, ChamferDistanceL2
-from .PointPrompt import ShiftNet, PointPrompt, Group, propagate, pooling
+from .GAPrompt import ShiftNet, PointPrompt, Group, propagate, pooling
 from .Point_MAE_segment import PointNetFeaturePropagation, Encoder, Mlp, Attention, get_loss
 from .prompt_MAE import QuickGELU, Adapter
 
