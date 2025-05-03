@@ -1,0 +1,4 @@
+NAME: S3DISDataset
+N_POINTS: 2048
+DATA_PATH: data/Stanford3dDataset_v1.2_Aligned_Version
+TASK: semantic_segmentation
