@@ -1,10 +1,16 @@
 # GAPrompt: Geometry-Aware Point Cloud Prompt for 3D Vision Model
 <div align="center">
     Zixiang Ai<sup>1</sup>&emsp; Zichen Liu<sup>1</sup>&emsp; Yuanhang Lei<sup>2</sup>&emsp; Zhenyu Cui<sup>1</sup>&emsp; Xu Zou<sup>3</sup>&emsp; Jiahuan Zhou<sup>†</sup><sup>1</sup> <br>
+    <small>
     <sup>1</sup>Wangxuan Institute of Computer Technology, Peking University&emsp; <br>
     <sup>2</sup>State Key Laboratory of CAD&CG, Zhejiang University&emsp; 
     <sup>3</sup>School of Artificial Intelligence and Automation, Huazhong University of Science and Technology
+    </small>
 </div>
+
+<p align="center">
+  <a href="https://github.com/zhoujiahuan1991/ICML2025-GAPrompt"><img src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2Fzhoujiahuan1991%2FICML2025-GAPrompt&label=GAPrompt&icon=github&color=%230a58ca"></a>
+</p>
 
 <div align="center">
 Official implementation of 'GAPrompt: Geometry-Aware Point Cloud Prompt for 3D Vision Model'.
