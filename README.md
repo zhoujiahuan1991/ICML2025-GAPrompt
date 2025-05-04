@@ -2,9 +2,9 @@
 <div align="center">
     Zixiang Ai<sup>1</sup>&emsp; Zichen Liu<sup>1</sup>&emsp; Yuanhang Lei<sup>2</sup>&emsp; Zhenyu Cui<sup>1</sup>&emsp; Xu Zou<sup>3</sup>&emsp; Jiahuan Zhou<sup>†</sup><sup>1</sup> <br>
     <small>
-    <sup>1</sup>Wangxuan Institute of Computer Technology, Peking University&emsp; <br>
-    <sup>2</sup>State Key Laboratory of CAD&CG, Zhejiang University&emsp; 
-    <sup>3</sup>School of Artificial Intelligence and Automation, Huazhong University of Science and Technology
+    <sup>1 Wangxuan Institute of Computer Technology, Peking University&emsp; <br></sup>
+    <sup>2 State Key Laboratory of CAD&CG, Zhejiang University&emsp; <br></sup>
+    <sup>3 School of Artificial Intelligence and Automation, Huazhong University of Science and Technology</sup>
     </small>
 </div>
 
