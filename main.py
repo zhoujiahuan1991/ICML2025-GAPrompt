@@ -7,9 +7,6 @@ from tools import pretrain_run_net as pretrain
 from tools import test_run_net as test_net
 from tools import finetune_run_net as finetune
 from tools import module_run_net as module_tune
-from tools import finetune_seg_run_net as finetune_seg
-from tools import module_seg_run_net as module_seg_tune
-from tools import module_seman_seg_run_net as module_seman_seg_tune
 from utils import parser, dist_utils, misc
 from utils.logger import *
 from utils.config import *
@@ -66,8 +63,7 @@ def main():
     logger.info(f'Distributed training: {args.distributed}')
     # set random seeds
     if args.seed is not None:
-        logger.info(f'Set random seed to {args.seed}, '
-                    f'deterministic: {args.deterministic}')
+        logger.info(f'Set random seed to {args.seed}, deterministic: {args.deterministic}')
         misc.set_random_seed(args.seed + args.local_rank, deterministic=args.deterministic) # seed + rank, for augmentation
     if args.distributed:
         assert args.local_rank == torch.distributed.get_rank() 
@@ -91,22 +87,6 @@ def main():
             else:
                 print('module tuning starts!')
                 module_tune(args, config, train_writer, val_writer)
-                # pretrain(args, config, train_writer, val_writer)
-        elif config.task == 'segmentation':
-            if args.finetune_model:
-                print('finetuning for segmentation starts!')
-                finetune_seg(args, config, train_writer, val_writer)
-            else:
-                print('module tuning for segmentation starts!')
-                module_seg_tune(args, config, train_writer, val_writer)
-        elif config.task == 'semantic_segmentation':
-            # if args.finetune_model:
-            #     print('finetuning for segmentation starts!')
-            #     finetune_seg(args, config, train_writer, val_writer)
-            # else:
-            print('module tuning for semantic segmentation starts!')
-            module_seman_seg_tune(args, config, train_writer, val_writer)
-
 
 if __name__ == '__main__':
     main()

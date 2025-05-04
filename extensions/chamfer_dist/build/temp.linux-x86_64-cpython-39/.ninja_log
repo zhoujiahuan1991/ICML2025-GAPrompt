@@ -1,0 +1,3 @@
+# ninja log v5
+0	23091	1746354101933496397	/data/ckpt/aizixiang/ICML2025-GAPrompt/extensions/chamfer_dist/build/temp.linux-x86_64-cpython-39/chamfer_cuda.o	c385a7fec50dcf6c
+0	52573	1746354131417461192	/data/ckpt/aizixiang/ICML2025-GAPrompt/extensions/chamfer_dist/build/temp.linux-x86_64-cpython-39/chamfer.o	85652592637a726f

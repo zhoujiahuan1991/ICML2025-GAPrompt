@@ -21,7 +21,7 @@ dataset : {
   test : { _base_: cfgs/dataset_configs/ModelNet40.yaml,
             others: {subset: 'test'}}}
 model : {
-  NAME: PointTransformer_pointtokenprompt, # PointTransformer_best PointTransformer_pointtokenprompt
+  NAME: PointTransformer_pointtokenprompt, # PointTransformer PointTransformer_pointtokenprompt
   trans_dim: 384,
   depth: 12,
   drop_path_rate: 0.1,
