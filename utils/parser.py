@@ -53,12 +53,12 @@ def get_args():
     parser.add_argument(
         '--test', 
         action='store_true', 
-        default=True, 
+        default=False, 
         help = 'test mode for certain ckpt')
     parser.add_argument(
         '--finetune_model', 
         action='store_true', 
-        default=True, 
+        default=False, 
         help = 'finetune modelnet with pretrained weight')
     parser.add_argument(
         '--if_maxmean', 
