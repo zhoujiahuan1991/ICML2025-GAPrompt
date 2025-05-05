@@ -35,7 +35,7 @@ To address this challenge, we propose a novel Geometry-Aware Point Cloud Prompt 
 
 
 
-## Ckpt Release
+## Checkpoint Release
 To do.
 <!-- 
 Real-world shape classification on the PB-T50-RS split of ScanObjectNN:
