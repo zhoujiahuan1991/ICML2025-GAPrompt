@@ -96,15 +96,16 @@ The final directory structure should be:
 
 We provide commands to parameter-efficiently fine-tune the pre-trained backbones, taking Point-MAE checkpoints for examples.
 ```
+# GAPrompt based on Point-MAE in ModelNet40
 python main.py  --config  cfgs/gaprompt_modelnet.yaml  --ckpts  pretrained_bases/mae_base.pth --peft
 
-# GAPrompt based on ReCon in scan_hardest
+# GAPrompt based on Point-MAE in scan_hardest
 python main.py  --config  cfgs/gaprompt_scan_hardest.yaml  --ckpts  pretrained_bases/mae_base.pth --peft
 
-# GAPrompt based on Point-FEMAE in scan_objbg
+# GAPrompt based on Point-MAE in scan_objbg
 python main.py  --config  cfgs/gaprompt_scan_objbg.yaml  --ckpts  pretrained_bases/mae_base.pth --peft
 
-# GAPrompt based on Point-FEMAE in scan_objonly
+# GAPrompt based on Point-MAE in scan_objonly
 python main.py  --config  cfgs/gaprompt_scan_objonly.yaml  --ckpts  pretrained_bases/mae_base.pth --peft
 ```
 
