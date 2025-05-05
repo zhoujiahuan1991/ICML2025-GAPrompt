@@ -37,14 +37,13 @@ Classification on three variants of the ScanObjectNN and the ModelNet40, includi
 
 
 ## Checkpoint Release
-
-<!-- 
-Real-world shape classification on the PB-T50-RS split of ScanObjectNN:
-| Method | Acc.| Logs |
+The backbone checkpoints used in our paper are provided below.
+| Backbones | Reference | Checkpoints |
 | :-----: |:-----:| :-----:|
-| Point-M2AE-aug |88.2% | [scan_m2ae.log](https://drive.google.com/file/d/1Dx8ucp_7_2GtSe60wq3jsbtn4xUKHqM8/view?usp=sharing) |
-| Point-MAE-aug | 89.1% | [scan_mae.log](https://drive.google.com/file/d/1WF7mnKwqrluWTOuKHXPUfkBJ8cLUEONh/view?usp=sharing) | -->
-
+| Point-MAE | ECCV 22 | [mae_base.pth](https://github.com/Pang-Yatian/Point-MAE/releases/download/main/pretrain.pth) |
+| ReCon | ICML 23 | [recon_base.pth](https://drive.google.com/file/d/1L-TlZUi7umBCDpZW-1F0Gf4X-9Wvf_Zo/view?usp=share_link) |
+| Point-GPT | NeurIPS 23 | [pointgpt-post-pretrained-L.pth](https://drive.google.com/file/d/1Kh6f6gFR12Y86FAeBtMU9NbNpB5vZnpu/view?usp=sharing) |
+| Point-FEMAE | AAAI 24 | [mae_base.pth](https://drive.google.com/drive/folders/1q0A-yXC1fmKKg38fbaqIxM79lvXpj4AO?usp=drive_link) |
 
 
 ## Environment
