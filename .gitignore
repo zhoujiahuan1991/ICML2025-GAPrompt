@@ -57,3 +57,5 @@ datasets/__pycache__
 *.egg-info*
 
 dist
+
+*.sh
