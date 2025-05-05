@@ -30,13 +30,14 @@ Pre-trained 3D vision models have gained significant attention for their promisi
 To address this challenge, we propose a novel Geometry-Aware Point Cloud Prompt (GAPrompt) that leverages geometric cues to enhance the adaptability of 3D vision models. First, we introduce a Point Prompt that serves as an auxiliary input alongside the original point cloud, explicitly guiding the model to capture fine-grained geometric details. Additionally, we present a Point Shift Prompter designed to extract global shape information from the point cloud, enabling instance-specific geometric adjustments at the input level. Moreover, our proposed Prompt Propagation mechanism incorporates the shape information into the model's feature extraction process, further strengthening its ability to capture essential geometric characteristics. Extensive experiments demonstrate that GAPrompt significantly outperforms state-of-the-art PEFT methods and achieves competitive results compared to full fine-tuning on various benchmarks, while utilizing only 2.19\% of trainable parameters.
 
 ## Main Results
+Classification on three variants of the ScanObjectNN and the ModelNet40, including the number of trainable parameters (Param) and overall accuracy (Acc). We report ScanObjectNN and ModelNet40 results without voting.
 
 <p align="center"><img src="files/results.png" width="60%"></p>
 
 
 
 ## Checkpoint Release
-To do.
+
 <!-- 
 Real-world shape classification on the PB-T50-RS split of ScanObjectNN:
 | Method | Acc.| Logs |
@@ -76,12 +77,13 @@ pip install "git+https://github.com/erikwijmans/Pointnet2_PyTorch.git#egg=pointn
 # GPU kNN
 pip install --upgrade https://github.com/unlimblue/KNN_CUDA/releases/download/0.2/KNN_CUDA-0.2-py3-none-any.whl
 ```
+
 ## Dataset
 For pre-training and fine-tuning, please follow [DATASET.md](https://github.com/lulutang0608/Point-BERT/blob/master/DATASET.md) to install ModelNet40, ScanObjectNN, and ShapeNetPart datasets, referring to Point-BERT. Specially Put the unzip folder under `data/`.
 
 The final directory structure should be:
 ```
-│Point-PEFT/
+│ICML2025-GAPrompt/
 ├──cfgs/
 ├──datasets/
 ├──data/
@@ -92,7 +94,19 @@ The final directory structure should be:
 
 ## Parameter-efficient Fine-tuning
 
-To do.
+We provide commands to parameter-efficiently fine-tune the pre-trained backbones, taking Point-MAE checkpoints for examples.
+```
+python main.py  --config  cfgs/gaprompt_modelnet.yaml  --ckpts  pretrained_bases/mae_base.pth --peft
+
+# GAPrompt based on ReCon in scan_hardest
+python main.py  --config  cfgs/gaprompt_scan_hardest.yaml  --ckpts  pretrained_bases/mae_base.pth --peft
+
+# GAPrompt based on Point-FEMAE in scan_objbg
+python main.py  --config  cfgs/gaprompt_scan_objbg.yaml  --ckpts  pretrained_bases/mae_base.pth --peft
+
+# GAPrompt based on Point-FEMAE in scan_objonly
+python main.py  --config  cfgs/gaprompt_scan_objonly.yaml  --ckpts  pretrained_bases/mae_base.pth --peft
+```
 
 
 ## Citation
