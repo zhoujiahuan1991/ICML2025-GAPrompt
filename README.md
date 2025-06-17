@@ -37,7 +37,7 @@ Classification on three variants of the ScanObjectNN and the ModelNet40, includi
 
 
 ## Checkpoint Release
-The backbone checkpoints used in our paper are provided below.
+The pre-trained backbone checkpoints used in our paper are provided below.
 | Backbones | Reference | Checkpoints |
 | :-----: |:-----:| :-----:|
 | Point-MAE | ECCV 22 | [mae_base.pth](https://github.com/Pang-Yatian/Point-MAE/releases/download/main/pretrain.pth) |
@@ -45,8 +45,27 @@ The backbone checkpoints used in our paper are provided below.
 | Point-GPT | NeurIPS 23 | [pointgpt-post-pretrained-L.pth](https://drive.google.com/file/d/1Kh6f6gFR12Y86FAeBtMU9NbNpB5vZnpu/view?usp=sharing) |
 | Point-FEMAE | AAAI 24 | [mae_base.pth](https://drive.google.com/drive/folders/1q0A-yXC1fmKKg38fbaqIxM79lvXpj4AO?usp=drive_link) |
 
+For reproducibility, logs and checkpoints of parameter-efficient fine-tuned models by our GAPrompt are provided below.
+
+|  Backbone   |        Dataset         |                             Log                              |                            Config                            |  Acc.  |                         Checkpoints                          |
+| :---------: | :--------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----: | :----------------------------------------------------------: |
+|  Point-MAE  | ScanObjectNN PB-T50-RS | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/logs/Point-MAE-hardest.log) | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/configs/Point-MAE-hardest.yaml) | 85.57% | [ckpt](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/ckpts/Point-MAE-hardest.pth) |
+|  Point-MAE  |  ScanObjectNN OBJ-BG   | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/logs/Point-MAE-objbg.log) | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/configs/Point-MAE-objbg.yaml) | 91.91% | [ckpt](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/ckpts/Point-MAE-objbg.pth) |
+|  Point-MAE  | ScanObjectNN OBJ-ONLY  | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/logs/Point-MAE-objonly.log) | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/configs/Point-MAE-objonly.yaml) | 90.19% | [ckpt](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/ckpts/Point-MAE-objonly.pth) |
+|  Point-MAE  |     ModelNet40 1k      | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/logs/Point-MAE-modelnet.log) | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/configs/Point-MAE-modelnet.yaml) | 94.2%  | [ckpt](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/ckpts/Point-MAE-modelnet.pth) |
+|    ReCon    | ScanObjectNN PB-T50-RS | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/logs/ReCon-hardest.log) | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/configs/ReCon-hardest.yaml) | 89.76% |                                                              |
+|    ReCon    |  ScanObjectNN OBJ-BG   | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/logs/ReCon-objbg.log) | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/configs/ReCon-objbg.yaml) | 94.49% |                                                              |
+|    ReCon    | ScanObjectNN OBJ-ONLY  | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/logs/ReCon-objonly.log) | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/configs/ReCon-objonly.yaml) | 92.60% |                                                              |
+|    ReCon    |     ModelNet40 1k      | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/logs/ReCon-modelnet.log) | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/configs/ReCon-modelnet.yaml) | 94.0%  |                                                              |
+| Point-FEMAE | ScanObjectNN PB-T50-RS | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/logs/Point-FEMAE-hardest.log) | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/configs/Point-FEMAE-hardest.yaml) | 90.67% |                                                              |
+| Point-FEMAE |  ScanObjectNN OBJ-BG   | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/logs/Point-FEMAE-objbg.log) | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/configs/Point-FEMAE-objbg.yaml) | 95.53% |                                                              |
+| Point-FEMAE | ScanObjectNN OBJ-ONLY  | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/logs/Point-FEMAE-objonly.log) | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/configs/Point-FEMAE-objonly.yaml) | 93.63% |                                                              |
+| Point-FEMAE |     ModelNet40 1k      | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/logs/Point-FEMAE-modelnet.log) | [link](https://github.com/zhoujiahuan1991/ICML2025-GAPrompt/releases/download/configs/Point-FEMAE-modelnet.yaml) | 94.5%  |                                                              |
+
+
 
 ## Environment
+
 Create a conda environment and install basic dependencies:
 ```bash
 git clone git@github.com:zhoujiahuan1991/ICML2025-GAPrompt.git
@@ -78,7 +97,7 @@ pip install --upgrade https://github.com/unlimblue/KNN_CUDA/releases/download/0.
 ```
 
 ## Dataset
-For pre-training and fine-tuning, please follow [DATASET.md](https://github.com/lulutang0608/Point-BERT/blob/master/DATASET.md) to install ModelNet40, ScanObjectNN, and ShapeNetPart datasets, referring to Point-BERT. Specially Put the unzip folder under `data/`.
+For pre-training and fine-tuning, please follow [DATASET.md](https://github.com/lulutang0608/Point-BERT/blob/master/DATASET.md) to install ModelNet40, ScanObjectNN, and ShapeNetPart datasets, referring to Point-BERT. Specially put the unzip folder under `data/`.
 
 The final directory structure should be:
 ```
