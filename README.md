@@ -9,6 +9,7 @@
 </div>
 
 <p align="center">
+  <a href='https://arxiv.org/abs/2505.04119'><img src='https://img.shields.io/badge/Arxiv-2505.04119-A42C25.svg?logo=arXiv'></a>
   <a href="https://github.com/zhoujiahuan1991/ICML2025-GAPrompt"><img src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2Fzhoujiahuan1991%2FICML2025-GAPrompt&label=GAPrompt&icon=github&color=%230a58ca"></a>
 </p>
 
