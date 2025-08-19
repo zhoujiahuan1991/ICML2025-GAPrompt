@@ -1,7 +1,7 @@
 import os
 os.environ['OMP_NUM_THREADS']='2'
 os.environ['MKL_NUM_THREADS']='2'
-# os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+os.environ['CUDA_VISIBLE_DEVICES'] = '3'
 os.environ["CUDA_LAUNCH_BLOCKING"] = '1'
 from tools import pretrain_run_net as pretrain
 from tools import test_run_net as test_net
