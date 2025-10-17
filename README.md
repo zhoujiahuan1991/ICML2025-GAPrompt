@@ -131,7 +131,14 @@ python main.py  --config  cfgs/gaprompt_scan_objonly.yaml  --ckpts  pretrained_b
 
 ## Citation
 If you find our paper and code useful in your research, please consider giving a star and citation.
-To do.
+```bibtex
+@article{ai2025gaprompt,
+  title={GAPrompt: Geometry-Aware Point Cloud Prompt for 3D Vision Model},
+  author={Zixiang Ai, Zichen Liu, Yuanhang Lei, Zhenyu Cui, Xu Zou, Jiahuan Zhou},
+  booktitle={ICML},
+  year={2025}
+}
+```
 
 
 ## Acknowledgement
