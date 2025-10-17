@@ -134,8 +134,8 @@ If you find our paper and code useful in your research, please consider giving a
 ```bibtex
 @inproceedings{ai2025gaprompt,
   title={GAPrompt: Geometry-Aware Point Cloud Prompt for 3D Vision Model},
-  author={Zixiang Ai, Zichen Liu, Yuanhang Lei, Zhenyu Cui, Xu Zou, Jiahuan Zhou},
-  booktitle={International Conference on Machine Learning (ICML) },
+  author={Ai, Zixiang and Liu, Zichen and Lei, Yuanhang and Cui, Zhenyu and Zou, Xu and Zhou, Jiahuan},
+  booktitle={International Conference on Machine Learning},
   year={2025}
 }
 ```
